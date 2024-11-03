@@ -100,6 +100,10 @@ td img {
 td button {
   background-color: #f44336;
   border-radius: 0.8rem; /* Utiliser rem */
+  padding: 0.5rem 0.5rem; /* Ajuster le padding pour les petits écrans */
+  font-size: 0.9rem; /* Réduire la taille de la police pour les petits écrans */
+  width: 100%; /* Faire en sorte que le bouton prenne toute la largeur de la cellule */
+  box-sizing: border-box; /* Inclure le padding dans la largeur totale */
 }
 
 td button:hover {
@@ -120,7 +124,7 @@ td button:hover {
   }
 
   tr {
-    display: table; /* Rendre les lignes comme des éléments de tableau */
+
     width: 100%; /* Chaque ligne prend toute la largeur */
     table-layout: auto; /* Ajustement automatique des colonnes */
   }
@@ -129,6 +133,6 @@ td button:hover {
     padding: 0.5rem; /* Ajuster le padding */
     text-align: left; /* Alignement à gauche */
     border-bottom: 1px solid #ddd; /* Ligne de séparation entre les cellules */
-    white-space: nowrap; /* Empêche le retour à la ligne dans les cellules */
+
   }
 }
