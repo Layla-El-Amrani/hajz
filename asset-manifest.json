@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/hajz/static/css/main.d3ce6160.css",
+    "main.css": "/hajz/static/css/main.29e7e6d3.css",
     "main.js": "/hajz/static/js/main.ec4a51c8.js",
     "static/media/4.jpg": "/hajz/static/media/4.18c019aac9fa7a9909aa.jpg",
     "static/media/1.jpg": "/hajz/static/media/1.47a137425927364fc80b.jpg",
     "static/media/2.jpg": "/hajz/static/media/2.5d8d5d983ed9eb7811fd.jpg",
     "index.html": "/hajz/index.html",
-    "main.d3ce6160.css.map": "/hajz/static/css/main.d3ce6160.css.map",
+    "main.29e7e6d3.css.map": "/hajz/static/css/main.29e7e6d3.css.map",
     "main.ec4a51c8.js.map": "/hajz/static/js/main.ec4a51c8.js.map"
   },
   "entrypoints": [
-    "static/css/main.d3ce6160.css",
+    "static/css/main.29e7e6d3.css",
     "static/js/main.ec4a51c8.js"
   ]
 }
