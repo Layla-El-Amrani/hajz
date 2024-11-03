@@ -2,6 +2,7 @@ import React from 'react';
 
 const Voiture = ({ voiture, supprimerVoiture }) => {
   return (
+    
     <tr>
       <td>{voiture.id}</td> {/* Affichage de l'ID */}
       <td>{voiture.Marque}</td>

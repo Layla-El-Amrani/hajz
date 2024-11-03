@@ -18,8 +18,9 @@ const ListeVoitures = () => {
 
   return (
     <div className="liste-voitures">
-      <h1>Liste des Voitures de Location</h1>
+      <h1>Gestion  des voitures de location</h1>
       <AjouterVoiture setVoitures={setVoitures} voitures={voitures} /> {/* Passer la liste des voitures */}
+      <h2>Liste des voitures:</h2>
       <table>
         <thead>
           <tr>
@@ -32,6 +33,7 @@ const ListeVoitures = () => {
           </tr>
         </thead>
         <tbody>
+          
           {voitures.map(voiture => (
             <Voiture key={voiture.id} voiture={voiture} supprimerVoiture={supprimerVoiture} />
           ))}

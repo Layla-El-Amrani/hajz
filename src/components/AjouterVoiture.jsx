@@ -52,7 +52,7 @@ const AjouterVoiture = ({ setVoitures, voitures }) => {
 
   return (
     <div className="ajouter-voiture">
-      <h2>Ajouter une Nouvelle Voiture</h2>
+      <h2>Ajouter une nouvelle voiture</h2>
       <div className="form-container">
         <input type="text" placeholder="ID" value={id} onChange={e => setId(e.target.value)} />
         <input type="text" placeholder="Marque" value={marque} onChange={e => setMarque(e.target.value)} />
