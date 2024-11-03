@@ -2,7 +2,7 @@ body {
   font-family: 'Arial', sans-serif;
   background-color: #e9ecef;
   margin: 0;
-  padding: 20px;
+  padding: 2rem; /* Utiliser rem pour le padding */
 }
 
 .app {
@@ -11,44 +11,44 @@ body {
 }
 
 .liste-voitures {
-  max-width: 900px;
+  max-width: 90%; /* Utiliser % pour rendre la largeur plus flexible */
   margin: auto;
   background-color: #ffffff;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 2rem; /* Utiliser rem */
+  border-radius: 1rem; /* Utiliser rem */
+  box-shadow: 0 0.4rem 2rem rgba(0, 0, 0, 0.1);
   transition: transform 0.2s;
 }
 
 .liste-voitures:hover {
-  transform: translateY(-5px);
+  transform: translateY(-0.5rem); /* Utiliser rem */
 }
 
 h1 {
   text-align: center;
   color: #4CAF50;
-  margin-bottom: 20px;
-  font-size: 2.5em;
+  margin-bottom: 1.5rem; /* Utiliser rem */
+  font-size: 2.5rem; /* Utiliser rem */
 }
 
 h2 {
   color: #333;
-  margin-bottom: 15px;
-  font-size: 1.8em;
+  margin-bottom: 1rem; /* Utiliser rem */
+  font-size: 1.8rem; /* Utiliser rem */
 }
 
 .form-container {
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  margin-bottom: 20px;
+  gap: 1rem; /* Utiliser rem */
+  margin-bottom: 1.5rem; /* Utiliser rem */
 }
 
 input {
-  padding: 12px;
+  padding: 1rem; /* Utiliser rem */
   border: 1px solid #ccc;
-  border-radius: 8px;
-  font-size: 16px;
+  border-radius: 0.8rem; /* Utiliser rem */
+  font-size: 1rem; /* Utiliser rem */
   transition: border-color 0.3s;
 }
 
@@ -58,11 +58,11 @@ input:focus {
 }
 
 button {
-  padding: 12px 20px;
+  padding: 1rem 2rem; /* Utiliser rem */
   color: white;
   background-color: #4CAF50;
   border: none;
-  border-radius: 8px;
+  border-radius: 0.8rem; /* Utiliser rem */
   cursor: pointer;
   transition: background-color 0.3s, transform 0.3s;
 }
@@ -75,11 +75,11 @@ button:hover {
 table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 20px;
+  margin-top: 2rem; /* Utiliser rem */
 }
 
 th, td {
-  padding: 15px;
+  padding: 1rem; /* Utiliser rem */
   text-align: left;
   border: 1px solid #ddd;
 }
@@ -91,15 +91,15 @@ th {
 }
 
 td img {
-  width: 150px; 
+  max-width: 100%; /* Adapter à la taille du conteneur */
   height: auto; 
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 0.8rem; /* Utiliser rem */
+  box-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.1);
 }
 
 td button {
   background-color: #f44336;
-  border-radius: 8px;
+  border-radius: 0.8rem; /* Utiliser rem */
 }
 
 td button:hover {
@@ -108,7 +108,27 @@ td button:hover {
 }
 
 @media (max-width: 600px) {
-  .form-container {
-    flex-direction: column;
+  .liste-voitures {
+    padding: 1rem; /* Réduire le padding pour les petits écrans */
+  }
+
+  table {
+    width: 100%; /* Garder le tableau à 100% de la largeur */
+    border-collapse: collapse; /* Supprimer l'espacement des bordures */
+    overflow-x: auto; /* Permettre le défilement horizontal */
+    display: block; /* Affichage en bloc pour permettre le défilement */
+  }
+
+  tr {
+    display: table; /* Rendre les lignes comme des éléments de tableau */
+    width: 100%; /* Chaque ligne prend toute la largeur */
+    table-layout: auto; /* Ajustement automatique des colonnes */
+  }
+
+  th, td {
+    padding: 0.5rem; /* Ajuster le padding */
+    text-align: left; /* Alignement à gauche */
+    border-bottom: 1px solid #ddd; /* Ligne de séparation entre les cellules */
+    white-space: nowrap; /* Empêche le retour à la ligne dans les cellules */
   }
 }
